@@ -1,28 +1,59 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es"><head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> pacticas de desarollo web</title>
+    <meta author="Anahí Torres">
+    <meta keywords="html, etiquetas, arquitectura">
+    <title>Mi arquitectura html</title>
 </head>
 <body>
     <header>
-        <h1>britacora de pacticas</h1>
-    <p>
-        bienvenido a repositorio de pacrticas
-    </p>
+        <img src="img/logo.jpg" width="100" height="100">
+        <nav>
+            <ul>
+                <li><a href="http://www.google.com" target="_blank">opcion 1</a></li>
+                <li><a href="contacto.html" target="_parent">Opcion2</a></li>
+                <li>Opcion 3</li>
+                <li>Opcion 4</li>
+                <li>opcion 5</li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h1>unidad 2</h1>
-        <article><p> aun sin contenido</p></article>
-    </section>
-    <section>
-        <h1>unidad 3</h1>
-        <article><p> aun sin contenido</p></article>
-    </section>
+    <main>
+        <section id="renglon1">
+            <aside id="barra_lateral">
+                <p>Lista de Tareas</p>
+                <ol>
+                    <li>Tarea 1</li>
+                    <li>Tarea 2</li>
+                    <li>Tarea 3</li>
+                    <li>Tarea 4</li>
+                </ol>
+            </aside>
+            <article id="video">
+                <h3>Video</h3>
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/NI4Z9BeHQ8I?si=tdVKl-bs1o1Hj7o_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+            </article>
+        </section>
+        <section id="renglon2">
+            <article id="galeria">
+                <h3>Galería</h3>
+                <p><i>insertar Carrusel</i></p>
+            </article>
+            <article id="mapa">
+                <h3>Mapa de Ubicación </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12399.755596625655!2d-101.7241555987908!3d21.149551998345558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bc0b129008a7b%3A0x9e325db4139d35d2!2sDifraxion!5e0!3m2!1ses!2smx!4v1789404055211!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </article>
+        </section>
+    </main>
     <footer>
-        <h3>Emilianozunigavelazquez</h3>
-        <h5>Emilianozunigavelazquez680@gmail.com</h5>
+        <article id="redes_sociales">RRSS</article>
+        <article id="Contacto">
+            <p>Anahí Torres</p>
+        </article>
+        <article id="Faq">Preguntas frecuentes</article>
     </footer>
-</body>
-</html>
+    
+    
+
+</body></html>
