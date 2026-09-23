@@ -1,26 +1,24 @@
-<html lang="es"><head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="EMILIANO">
-    <meta keywords="html, etiquetas, arquitectura">
+    <meta name="author" content="EMILIANO">
+    <meta name="keywords" content="html, etiquetas, arquitectura">
     <title>Mi arquitectura html</title>
-    <link rel="stylesheet" href="LDSM401/practicasweb/estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <img src="img/logo.jpg" width="100" height="100">
+        <img src="img/logo.jpg" width="100" height="100" alt="Logo">
         <nav>
-            <!--Listas para menu-->
-            <!--ol listas ordenadas (1,2,3)-->
-            <!--ul listas desordenadas (circle, square,round)-->
             <ul>
-                <!--elementos de una lista li-->
-                <li><a href="http://www.google.com" target="_blank">opcion 1</a></li>
-                <li><a href="contacto.html" target="_parent">Opcion2</a></li>
-                <li>Opcion 3</li>
-                <li>Opcion 4</li>
-                <li>opcion 5</li>
+                <!-- Enlaces locales en lugar de direcciones externas como google.com -->
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="contacto.html">Opción 2</a></li>
+                <li>Opción 3</li>
+                <li>Opción 4</li>
+                <li>Opción 5</li>
             </ul>
         </nav>
     </header>
@@ -37,7 +35,11 @@
             </aside>
             <article id="video">
                 <h3>Video</h3>
-                <iframe width="315" height="315" src="https://www.youtube.com/embed/NI4Z9BeHQ8I?si=tdVKl-bs1o1Hj7o_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                <!-- Se reemplaza el iframe de YouTube por un reproductor local de video -->
+                <video width="315" height="315" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta el reproductor de video.
+                </video>
             </article>
         </section>
         <section id="renglon2">
@@ -46,16 +48,18 @@
                 <p><i>insertar Carrusel</i></p>
             </article>
             <article id="mapa">
-                <h3>Mapa de Ubicación </h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12399.755596625655!2d-101.7241555987908!3d21.149551998345558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bc0b129008a7b%3A0x9e325db4139d35d2!2sDifraxion!5e0!3m2!1ses!2smx!4v1789404055211!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <h3>Mapa de Ubicación</h3>
+                <!-- Se elimina el iframe de Google Maps y se coloca un mapa/imagen local -->
+                <img src="img/mapa.jpg" alt="Mapa de ubicación" width="400" height="300">
             </article>
         </section>
     </main>
     <footer>
         <article class="pie" id="redes_sociales">RRSS</article>
-        <article class="pie" id="contacto">
-        </article>
+        <article class="pie" id="contacto"></article>
         <article class="pie" id="Faq">Preguntas frecuentes</article>
 
-            <p>EMILIANO</p>
+        <p>EMILIANO</p>
     </footer>
+</body>
+</html>
