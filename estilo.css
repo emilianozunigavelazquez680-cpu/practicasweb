@@ -70,3 +70,10 @@ nav li:hover {
     background-color: brown;
     color: yellowgreen;
 }
+.renglon{
+    background-color: #2373F4;
+    color: #ddf650;
+    display:flex;
+    gap:20px;
+    flex-direction:row ;
+}
