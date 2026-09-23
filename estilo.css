@@ -94,4 +94,11 @@ nav li:hover {
     text-align: center;
     border: #50b9f6 3px dotted;
 }
+.renglon #galeria{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    border: #50b9f6 3px dotted;
+}
 
