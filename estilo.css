@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* EJEMPLO DE REGLA PARA SELECTOR TIPO */
+body {
+    background-color: #B1E5E6; /* COLOR DE FONDO */
+    color: #757D6F; /* COLOR DE LETRA */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* TIPO DE LETRA */
+    padding: 20px;
+    line-height: 1.5; /* ESPACIADO: DISTANCIA ENTRE RENGLONES */
+}
+
+/* SELECTOR POR ID */
+#barra_lateral {
+    background-color: blue;
+    color: #8B9A6E;
+    font-weight: bold; /* PESO: BOLD ES NEGRITA */
+    width: 300px;
+}
+
+.pie {
+    background-color: aquamarine;
+    color: red;
+    padding: 20px;
+    width: 350px;
+}
+
+/* ESTILO DE MENU */
+header {
+    background-color: blueviolet;
+    color: aqua;
+    display: flex; /* ACOMODAR ELEMENTOS DE MANERA FLEXIBLE */
+    justify-content: space-between; /* JUSTIFICA EL ESPACIO ENTRE ELEMENTOS */
+    align-items: center;
+    padding: 10px 24px;
+    width: 100%;
+}
+
+nav {
+    background-color: darkred;
+    color: cyan;
+    padding: 0 16px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* DISTANCIA ENTRE LI */
+    align-items: center;
+}
+
+nav li {
+    color: #B1E5E6;
+    font-size: 15px;
+    padding: 14px 8px;
+    cursor: pointer;
+}
+
+nav li a {
+    color: blue;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: brown;
+    color: yellowgreen;
+}
