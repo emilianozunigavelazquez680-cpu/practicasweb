@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Biografía</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<main>
+    <nav class="menu">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="actividad2.html">01 Home</a></li>
+            <li><a href="disco.html">02 Disco</a></li>
+            <li><a href="cantante.html">03 Cantante</a></li>
+            <li><a href="cancion.html">04 Canción</a></li>
+            <li><a href="playlist.html">05 Playlist</a></li>
+            <li><a href="biografia.html">06 Biografía</a></li>
+        </ul>
+    </nav>
+    <section class="contenido-principal">
+        <div class="formulario">
+            <h1>Registrar Biografía</h1>
+            <form id="formBiografia">
+                <label for="nombreBio">Nombre del cantante:</label>
+                <input type="text" id="nombreBio" required>
+                <label for="nombreReal">Nombre completo:</label>
+                <input type="text" id="nombreReal">
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento">
+                <label for="lugarNacimiento">Lugar de nacimiento:</label>
+                <input type="text" id="lugarNacimiento">
+                <label for="generoMusical">Género musical:</label>
+                <select id="generoMusical">
+                    <option value="">Selecciona un género</option>
+                    <option>Pop</option>
+                    <option>Rock</option>
+                    <option>Rap</option>
+                    <option>Reggaetón</option>
+                    <option>Balada</option>
+                    <option>J-Pop</option>
+                    <option>Otro</option>
+                </select>
+                <label for="inicios">Inicios en la música:</label>
+                <textarea id="inicios"
+                placeholder="Escribe cómo comenzó su carrera..."></textarea>
+                <label for="trayectoria">Trayectoria:</label>
+                <textarea id="trayectoria"
+                placeholder="Escribe los acontecimientos importantes de su carrera..."></textarea>
+                <label for="albumes">Álbumes importantes:</label>
+                <textarea id="albumes"
+                placeholder="Escribe sus álbumes más importantes..."></textarea>
+                <label for="canciones">Canciones destacadas:</label>
+                <textarea id="canciones"
+                placeholder="Escribe sus canciones más conocidas..."></textarea>
+                <label for="premios">Premios y reconocimientos:</label>
+                <textarea id="premios"
+                placeholder="Escribe sus premios o reconocimientos..."></textarea>
+                <label for="ultimoConcierto">Último concierto:</label>
+                <textarea id="ultimoConcierto"
+                placeholder="Escribe información de su último concierto..."></textarea>
+                <label for="fotoBiografia">Foto del cantante:</label>
+                <input type="file" id="fotoBiografia" accept="image/*">
+                <button type="submit">Registrar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <span>Grupo: LDSM401</span>
+    <span>Alumno: Emiliano</span>
+</footer>
+<script src="js/funcionalidad.js"></script>
+</body>
+</html>
