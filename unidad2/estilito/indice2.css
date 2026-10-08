@@ -1,31 +1,64 @@
 body {
+    background-color: #e8f0f8;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 40px;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
 }
 
+/* Título principal */
 h1 {
-    color: #333;
+    background-color: #234b80;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Títulos de Prácticas y Extras */
+h2 {
+    color: #234b80;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+/* Listas centradas */
+ol {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Elementos de la lista */
+li {
+    margin: 15px 0;
+    color: #234b80;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* Botones */
+a {
+    background-color: #3478bd;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    min-width: 150px;
     text-align: center;
 }
 
-ol {
-    width: 300px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px 40px;
-    border-radius: 8px;
-}
-
-li {
-    margin: 12px 0;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
+/* Cuando pasas el mouse */
 a:hover {
-    color: #0066cc;
+    background-color: #1c548c;
+    color: white;
 }
