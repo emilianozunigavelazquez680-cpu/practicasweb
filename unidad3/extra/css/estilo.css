@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #444;
+}
+
+h3 {
+    color: #555;
+}
+
+select {
+    padding: 5px;
+}
+
+input {
+    padding: 6px;
+    margin: 4px;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#seccionVolumen,
+#seccionAreas {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+p {
+    color: #333;
+    font-weight: bold;
+}
