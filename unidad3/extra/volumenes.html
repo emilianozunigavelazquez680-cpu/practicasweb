@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Volumen y Áreas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h1>Volumen y Áreas</h1>
+ 
+    <!-- Menú desplegable para seleccionar la opción -->
+    <label for="opcion">¿Qué deseas calcular?:</label>
+    <select id="opcion" onchange="cambiarSeccion()">
+        <option value="volumen">Volúmenes</option>
+        <option value="areas">Áreas</option>
+    </select>
+ 
+    <hr>
+ 
+    <!-- Sección de Volumen -->
+    <div id="seccionVolumen">
+        <h2>Volumen</h2>
+ 
+        <h3>Cubo</h3>
+        <input type="number" id="lado" placeholder="Lado">
+        <button onclick="cubo()">Calcular</button>
+        <p id="resultadoCubo"></p>  
+ 
+        <h3>Cilindro</h3>
+        <input type="number" id="radio" placeholder="Radio">
+        <input type="number" id="altura" placeholder="Altura">
+        <button onclick="cilindro()">Calcular</button>
+        <p id="resultadoCilindro"></p>
+ 
+        <h3>Prisma Triangular</h3>
+        <input type="number" id="baseTrianguloPrisma" placeholder="Base del triángulo">
+        <input type="number" id="alturaTrianguloPrisma" placeholder="Altura del triángulo">
+        <input type="number" id="alturaPrisma" placeholder="Altura del prisma">
+        <button onclick="prismaTriangular()">Calcular</button>
+        <p id="resultadoPrisma"></p>
+    </div>
+ 
+    <div id="seccionAreas" style="display: none;">
+        <h2>Áreas</h2>
+ 
+        <h3>Triángulo</h3>
+        <input type="number" id="baseT" placeholder="Base">
+        <input type="number" id="alturaT" placeholder="Altura">
+        <button onclick="triangulo()">Calcular</button>
+        <p id="resultadoTriangulo"></p>
+ 
+        <h3>Trapecio</h3>
+        <input type="number" id="baseMayor" placeholder="Base mayor">
+        <input type="number" id="baseMenor" placeholder="Base menor">
+        <input type="number" id="alturaTr" placeholder="Altura">
+        <button onclick="trapecio()">Calcular</button>
+        <p id="resultadoTrapecio"></p>
+ 
+        <h3>Círculo</h3>
+        <input type="number" id="radioC" placeholder="Radio">
+        <button onclick="circulo()">Calcular</button>
+        <p id="resultadoCirculo"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
